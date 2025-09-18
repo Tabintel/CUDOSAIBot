@@ -53,9 +53,9 @@ ASI bot
 
 ### setup:
 
- `cd telegram-bot`
- `npm install`
- `npm start`
+ - `cd telegram-bot`
+ - `npm install`
+ - `npm start`
 
 
  ### Usage:
