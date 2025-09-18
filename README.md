@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## InferenceBot
 
 Discord bot that queries a serverless inference API with a chosen LLM.
@@ -23,6 +22,7 @@ DISCORD_GUILD_ID=your-guild-id
 
 LLM_API_KEY=your-llm-api-key
 LLM_API_BASE=https://api.your-inference-platform.com/v1
+TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 ```
 
 3. Register slash commands (guild-scoped)
@@ -43,7 +43,30 @@ npm start
 ### Notes
 - The LLM API is assumed OpenAI-compatible at `POST {LLM_API_BASE}/chat/completions` with `Authorization: Bearer` header.
 - Increase timeouts or add retries in `src/llmClient.js` if needed.
-=======
 # CUDOSAIBot
 ASI bot
->>>>>>> d8d21a2a7366cfcf7831f51ec93fbeb7d1ae1271
+
+
+## Telegram bot
+
+- Telegram bot that queries a serverless inference API with a chosen LLM.
+
+### setup:
+
+ `cd telegram-bot`
+ `npm install`
+ `npm start`
+
+
+ ### Usage:
+ - In your Telegram bot, use `/askllm`.
+ - Choose a model and provide the question.
+ - The bot posts "Thinking…", then replies with the answer.
+ 
+
+
+
+
+
+
+
