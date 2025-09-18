@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## InferenceBot
 
 Discord bot that queries a serverless inference API with a chosen LLM.
@@ -42,3 +43,7 @@ npm start
 ### Notes
 - The LLM API is assumed OpenAI-compatible at `POST {LLM_API_BASE}/chat/completions` with `Authorization: Bearer` header.
 - Increase timeouts or add retries in `src/llmClient.js` if needed.
+=======
+# CUDOSAIBot
+ASI bot
+>>>>>>> d8d21a2a7366cfcf7831f51ec93fbeb7d1ae1271
