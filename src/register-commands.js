@@ -2,16 +2,14 @@ const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 const { discordToken, discordClientId, discordGuildId } = require('./config');
 
 const MODEL_CHOICES = [
-  'asi1-mini'
-  // 'google/gemma-3-27b-it',
-  // 'openai/gpt-oss-20b',
-  // 'meta-llama/llama-3.3-70b-instruct',
-  // 'mistralai/mistral-nemo',
-  // 'qwen/qwen3-32b',
-  // 'z-ai/glm-4.5-air',
+  'asi1-mini',
+  'google/gemma-3-27b-it',
+  'openai/gpt-oss-20b',
+  'meta-llama/llama-3.3-70b-instruct',
+  'mistralai/mistral-nemo',
+  'qwen/qwen3-32b',
+  'z-ai/glm-4.5-air',
 ];
-
-//only quwery asione for now
 
 function buildCommands() {
   const ask = new SlashCommandBuilder()
